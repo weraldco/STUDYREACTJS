@@ -1,5 +1,5 @@
 // import './budgetapp.css';
-import Demo from './8-USEREF/Demo/Demo';
+import Demo from './10-REACTROUTER/PRACTICE/Demo';
 import './pokemon.css';
 function App() {
 	return (
