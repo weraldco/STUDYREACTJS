@@ -1,6 +1,5 @@
 // import './budgetapp.css';
-import Demo from './10-REACTROUTER/PRACTICE/Demo';
-import './pokemon.css';
+import Demo from './13-LAZYSUSPENSE/PRACTICE/Demo';
 function App() {
 	return (
 		<>

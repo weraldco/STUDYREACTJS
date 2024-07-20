@@ -1,4 +1,39 @@
-*,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--theme-color: #52b3d0;
+}
+
+/* ... */
+
+.btn {
+	background-color: var(--theme-color);
+	/* ... */
+}
+
+@layer components {
+	.modal {
+		@apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-10 bg-white z-50;
+	}
+	.modal-bg {
+		@apply fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 z-50;
+	}
+	.btn-close {
+		@apply p-2 bg-indigo-600 text-white hover:bg-indigo-500 transition-all active:bg-indigo-700 rounded-md;
+	}
+	.btn-open {
+		@apply p-2 bg-indigo-600 text-white hover:bg-indigo-500 transition-all active:bg-indigo-700 rounded-md;
+	}
+	.header {
+		@apply text-5xl font-bold text-amber-600;
+	}
+	.btn-demo {
+		@apply p-2 rounded-md bg-indigo-600 text-white font-bold hover:bg-indigo-500 active:bg-indigo-600;
+	}
+}
+/* *,
 ::after,
 ::before {
 	margin: 0;
@@ -32,4 +67,4 @@ button:hover {
 
 button:active {
 	background-color: rgb(130, 81, 209);
-}
+} */
